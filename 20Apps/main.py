@@ -1,9 +1,6 @@
-prompt = "Enter your todo item:" todos = [input(prompt),input(prompt),input(prompt)]
-# todo1 = input(prompt)
-#todo2 = input(prompt)
-#todo3 = input(prompt)
-#todos = [todo1,todo2,todo3]
-
-print(todos) type(prompt)
-print(type(prompt))
-print(type(todos))
+no = (0)
+todo1 = []
+while True:
+    todo = input("enter input")
+    todo1.append(todo)
+    print(todo1)
