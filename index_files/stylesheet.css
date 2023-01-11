@@ -65,14 +65,11 @@ td
 	mso-pattern:black none;}
 .xl67
 	{mso-style-parent:style0;
-	mso-number-format:"Short Date";}
-.xl68
-	{mso-style-parent:style0;
 	border-top:none;
 	border-right:.5pt solid windowtext;
 	border-bottom:.5pt solid windowtext;
 	border-left:none;}
-.xl69
+.xl68
 	{mso-style-parent:style0;
 	font-weight:700;
 	text-align:center;
@@ -82,7 +79,7 @@ td
 	border-left:.5pt solid windowtext;
 	background:#BDD7EE;
 	mso-pattern:black none;}
-.xl70
+.xl69
 	{mso-style-parent:style0;
 	font-weight:700;
 	text-align:center;
@@ -92,7 +89,7 @@ td
 	border-left:none;
 	background:#BDD7EE;
 	mso-pattern:black none;}
-.xl71
+.xl70
 	{mso-style-parent:style0;
 	mso-number-format:"Short Date";
 	text-align:center;
@@ -101,7 +98,7 @@ td
 	border-right:.5pt solid windowtext;
 	border-bottom:none;
 	border-left:.5pt solid windowtext;}
-.xl72
+.xl71
 	{mso-style-parent:style0;
 	mso-number-format:"Short Date";
 	text-align:center;
@@ -110,7 +107,7 @@ td
 	border-right:.5pt solid windowtext;
 	border-bottom:none;
 	border-left:.5pt solid windowtext;}
-.xl73
+.xl72
 	{mso-style-parent:style0;
 	mso-number-format:"Short Date";
 	text-align:center;
@@ -119,7 +116,7 @@ td
 	border-right:.5pt solid windowtext;
 	border-bottom:.5pt solid black;
 	border-left:.5pt solid windowtext;}
-.xl74
+.xl73
 	{mso-style-parent:style0;
 	mso-number-format:"Short Date";
 	text-align:center;
@@ -129,7 +126,7 @@ td
 	border-bottom:none;
 	border-left:.5pt solid windowtext;
 	white-space:normal;}
-.xl75
+.xl74
 	{mso-style-parent:style0;
 	mso-number-format:"Short Date";
 	text-align:center;
@@ -139,19 +136,12 @@ td
 	border-bottom:none;
 	border-left:.5pt solid windowtext;
 	white-space:normal;}
+.xl75
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;}
 .xl76
 	{mso-style-parent:style0;
 	mso-number-format:"Short Date";
 	text-align:center;
 	vertical-align:middle;
-	border-top:none;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid black;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.xl77
-	{mso-style-parent:style0;
-	border-top:none;
-	border-right:.5pt solid windowtext;
-	border-bottom:none;
-	border-left:none;}
+	border:.5pt solid windowtext;}
