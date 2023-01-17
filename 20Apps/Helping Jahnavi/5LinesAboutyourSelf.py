@@ -1,0 +1,5 @@
+print("Hi,My name is Jahnavi")
+print("I study in 7th Grade")
+print("I live in hyderabad")
+print("I play basketball")
+print("I live in Srila park pride")
