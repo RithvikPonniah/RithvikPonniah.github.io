@@ -40,7 +40,7 @@
       <recent name="C:\Users\rbhan\OneDrive\Documents\GitHub\RithvikPonniah.github.io\20Apps\exp" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.excerise">
+  <component name="RunManager" selected="Python.main">
     <configuration name="A" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RithvikPonniah.github.io" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,9 +169,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.excerise" />
         <item itemvalue="Python.A" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.SimpleInterest" />
         <item itemvalue="Python.Mileage" />
       </list>
