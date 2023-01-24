@@ -6,10 +6,17 @@ while True:
             todo = input("Enter todo items you would like to add : ")
             todos.append(todo)
         case "show" | "display":
-            x = 0
-            for item in todos:
-                x = x + 1
-                print(x,".",item.title())
+            #x = 0
+            for index , item in enumerate(todos):
+                #x = x + 1
+                row = f"{index+1}.{item}"
+                print(row)
+        case "complete" :
+            for index , item in enumerate(todos):
+                row = f"{index+1}🤣{item}"
+                print(row)
+            complete = int(input("which line number did you complete"))
+            todos.pop(complete - 1)
         case "exit":
             break
         case "edit":
