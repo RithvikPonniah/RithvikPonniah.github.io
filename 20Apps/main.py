@@ -1,9 +1,13 @@
-todos = []
+#todos = []
+fObject = open('todos.txt' , 'r')
+todos = fObject.readlines()
+fObject.close()
+
 while True:
     userAction = input("Type add or show or exit or edit: ").strip()
     match userAction:
         case "add" | "create":
-            todo = input("Enter todo items you would like to add : ")
+            todo = input("Enter todo items you would like to add : ")+'\n'
             todos.append(todo)
         case "show" | "display":
             #x = 0
@@ -13,7 +17,7 @@ while True:
                 print(row)
         case "complete" :
             for index , item in enumerate(todos):
-                row = f"{index+1}🤣{item}"
+                row = f"{index+1}.{item}"
                 print(row)
             complete = int(input("which line number did you complete"))
             todos.pop(complete - 1)
@@ -25,4 +29,6 @@ while True:
             todos[y-1] = x
         case other:
             print("You have entered",other, "the only commands accepted are add show and exit")
+fObject = open('todos.txt' , 'w')
+fObject.writelines(todos)
 print("Bye,See you soon")
