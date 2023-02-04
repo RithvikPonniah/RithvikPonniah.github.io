@@ -1,8 +1,8 @@
 #todos = []
-fObject = open('files/todos.txt', 'r')
+fObject = open('../files/todos.txt', 'r')
 todos = fObject.readlines()
 fObject.close()
-fObject = open('files/todos.txt', 'w')
+fObject = open('../files/todos.txt', 'w')
 todos.append('bike')
 fObject.writelines(todos)
 todos.append('bike')

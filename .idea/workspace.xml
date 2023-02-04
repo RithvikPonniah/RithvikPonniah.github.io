@@ -41,12 +41,13 @@
       <recent name="C:\Users\rbhan\OneDrive\Documents\GitHub\RithvikPonniah.github.io\20Apps" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rbhan\OneDrive\Documents\GitHub\RithvikPonniah.github.io\20Apps\bonus" />
       <recent name="C:\Users\rbhan\OneDrive\Documents\GitHub\RithvikPonniah.github.io\20Apps\files" />
       <recent name="C:\Users\rbhan\OneDrive\Documents\GitHub\RithvikPonniah.github.io\20Apps" />
       <recent name="C:\Users\rbhan\OneDrive\Documents\GitHub\RithvikPonniah.github.io\20Apps\exp" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.file">
     <configuration name="Day5Bonus1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RithvikPonniah.github.io" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,7 +102,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20Apps/file.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\rbhan\OneDrive\Documents\GitHub\RithvikPonniah.github.io\20Apps\bonus\file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,7 +144,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20Apps/scratch.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\rbhan\OneDrive\Documents\GitHub\RithvikPonniah.github.io\20Apps\bonus\scratch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,7 +165,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20Apps/test.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\rbhan\OneDrive\Documents\GitHub\RithvikPonniah.github.io\20Apps\bonus\test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,9 +176,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.file" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.file" />
         <item itemvalue="Python.codingexcercise" />
         <item itemvalue="Python.Day5Bonus1" />
       </list>
@@ -198,7 +199,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/20Apps/test.py</url>
+          <url>file://$PROJECT_DIR$/20Apps/bonus/test.py</url>
           <line>17</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
