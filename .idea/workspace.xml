@@ -47,7 +47,7 @@
       <recent name="C:\Users\rbhan\OneDrive\Documents\GitHub\RithvikPonniah.github.io\20Apps\exp" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.codingExcersise1">
+  <component name="RunManager" selected="Python.main">
     <configuration name="codingExcersise1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RithvikPonniah.github.io" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,7 +69,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="codingexcercise" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RithvikPonniah.github.io" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -77,11 +77,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/20Apps/bonus" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/20Apps/excersise/day6" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20Apps/bonus/codingexcercise.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20Apps/excersise/day6/ex3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.ex3" />
         <item itemvalue="Python.codingExcersise1" />
         <item itemvalue="Python.file" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.codingexcercise" />
       </list>
     </recent_temporary>
   </component>
