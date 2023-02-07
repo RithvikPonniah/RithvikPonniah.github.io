@@ -20,7 +20,12 @@ while True:
             fObject = open('files/todos.txt', 'r')
             todos = fObject.readlines()
             fObject.close()
-            for index , item in enumerate(todos):
+            todos1 = [item.strip('\n') for item in todos]
+
+            #for item1 in todos :
+            #    new_item = item1.strip('\n')
+            #    todos1.append(new_item)
+            for index , item in enumerate(todos1):
                 #x = x + 1
                 row = f"{index+1}.{item}"
                 print(row)
