@@ -6,7 +6,8 @@ while True:
             #fObject = open('files/todos.txt', 'r')
             #todos = fObject.readlines()
             #fObject.close()
-            #todo = input("Enter todo items you would like to add : ")+'\n'
+
+            # todo = input("Enter todo items you would like to add : ")+'\n'
             #todos.append(todo)
             #fObject = open('files/todos.txt', 'w')
             #fObject.writelines(todos)
