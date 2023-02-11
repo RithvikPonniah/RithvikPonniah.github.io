@@ -1,5 +1,3 @@
-gym
-cycle
-walk
-kick aadhi
-Go to gym
+Gym 
+Library
+swimming
