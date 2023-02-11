@@ -1,3 +1,4 @@
-Gym 
-Library
-swimming
+show
+bike
+walk
+read
