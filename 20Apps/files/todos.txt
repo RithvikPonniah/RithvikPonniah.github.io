@@ -1,4 +1,3 @@
-show
-bike
-walk
-read
+jog
+gym
+run
