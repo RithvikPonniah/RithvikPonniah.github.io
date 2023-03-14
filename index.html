@@ -5,22 +5,23 @@ xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
 <meta name="Excel Workbook Frameset">
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
 <meta name=ProgId content=Excel.Sheet>
 <meta name=Generator content="Microsoft Excel 15">
-<link rel=File-List href="index_files/filelist.xml">
+<link rel=File-List href="index.fld/filelist.xml">
 <![if !supportTabStrip]>
-<link id="shLink" href="index_files/sheet001.html">
+<link id="shLink" href="index.fld/sheet001.htm">
 
 <link id="shLink">
 
 <script language="JavaScript">
 <!--
+ var g_iIEVer=0;
+ 
  var c_lTabs=1;
 
  var c_rgszSh=new Array(c_lTabs);
- c_rgszSh[0] = "20 Apps Python Course";
-
+ c_rgszSh[0] = "Sheet1";
 
 
  var c_rgszClr=new Array(8);
@@ -36,16 +37,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
  var g_iShCur;
  var g_rglTabX=new Array(c_lTabs);
 
-function fnGetIEVer()
-{
- var ua=window.navigator.userAgent
- var msie=ua.indexOf("MSIE")
- if (msie>0 && window.navigator.platform=="Win32")
-  return parseInt(ua.substring(msie+5,ua.indexOf(".", msie)));
- else
-  return 0;
-}
-
 function fnBuildFrameset()
 {
  var szHTML="<frameset rows=\"*,18\" border=0 width=0 frameborder=no framespacing=0>"+
@@ -55,11 +46,9 @@ function fnBuildFrameset()
   "<frame src=\"\" name=\"frTabs\" marginwidth=0 marginheight=0 scrolling=no>"+
   "</frameset></frameset><plaintext>";
 
- with (document) {
-  open("text/html","replace");
-  write(szHTML);
-  close();
- }
+document.open("text/html","replace");
+document.write(szHTML);
+document.close();
 
  fnBuildTabStrip();
 }
@@ -67,8 +56,8 @@ function fnBuildFrameset()
 function fnBuildTabStrip()
 {
  var szHTML=
-  "<html><head><style>.clScroll {font:8pt Courier New;color:"+c_rgszClr[6]+";cursor:default;line-height:10pt;}"+
-  ".clScroll2 {font:10pt Arial;color:"+c_rgszClr[6]+";cursor:default;line-height:11pt;}</style></head>"+
+  "<html><head><style>.clScroll {font:8pt Courier New;color:"+c_rgszClr[2]+";cursor:default;line-height:10pt;}"+
+  ".clScroll2 {font:10pt Arial;color:"+c_rgszClr[2]+";cursor:default;line-height:11pt;}</style></head>"+
   "<body onclick=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" onselectstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+" topmargin=0 leftmargin=0><table cellpadding=0 cellspacing=0 width=100%>"+
   "<tr><td colspan=6 height=1 bgcolor="+c_rgszClr[2]+"></td></tr>"+
   "<tr><td style=\"font:1pt\">&nbsp;<td>"+
@@ -78,16 +67,14 @@ function fnBuildTabStrip()
   "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(3);\" onmouseout=\"parent.fnMouseOutScroll(3);\"><a>&#187;</a></td>"+
   "<td style=\"font:1pt\">&nbsp;<td></tr></table></body></html>";
 
- with (frames['frScroll'].document) {
-  open("text/html","replace");
-  write(szHTML);
-  close();
- }
+frames['frScroll'].document.open("text/html","replace");
+frames['frScroll'].document.write(szHTML);
+frames['frScroll'].document.close();
 
  szHTML =
   "<html><head>"+
   "<style>A:link,A:visited,A:active {text-decoration:none;"+"color:"+c_rgszClr[3]+";}"+
-  ".clTab {cursor:hand;background:"+c_rgszClr[1]+";font:9pt Arial;padding-left:3px;padding-right:3px;text-align:center;}"+
+  ".clTab {cursor:hand;background:"+c_rgszClr[1]+";font:8pt Arial;padding-left:3px;padding-right:3px;text-align:center;}"+
   ".clBorder {background:"+c_rgszClr[2]+";font:1pt;}"+
   "</style></head><body onload=\"parent.fnInit();\" onselectstart=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+
   " topmargin=0 leftmargin=0><table id=tbTabs cellpadding=0 cellspacing=0>";
@@ -134,21 +121,41 @@ function fnBuildTabStrip()
  }
 
  szHTML+="</table></body></html>";
- with (frames['frTabs'].document) {
-  open("text/html","replace");
-  charset=document.charset;
-  write(szHTML);
-  close();
- }
+
+frames['frTabs'].document.open("text/html","replace");
+frames['frTabs'].document.charset=document.charset;
+frames['frTabs'].document. write(szHTML);
+frames['frTabs'].document.close();
+
 }
 
 function fnInit()
 {
- g_rglTabX[0]=0;
- var i;
- for (i=1;i<=c_lTabs;i++)
-  with (frames['frTabs'].document.all.tbTabs.rows[1].cells[fnTabToCol(i-1)])
-   g_rglTabX[i]=offsetLeft+offsetWidth-6;
+ if (parent.window.g_iIEVer>=4) {
+  if (document.readyState=="complete"
+   && frames['frTabs'].document.readyState=="complete")
+    {
+     g_rglTabX[0]=0;
+     var i;
+     for (i=1;i<=c_lTabs;i++)
+      with (frames['frTabs'].document.all.tbTabs.rows[1].cells[fnTabToCol(i-1)])
+       g_rglTabX[i]=offsetLeft+offsetWidth-6;
+    }
+    else
+     window.setTimeout("fnInit()",150);
+   }
+}
+
+function fnGetIEVer()
+{
+ var stzAgent=navigator.userAgent;
+ var iVer=parseInt(navigator.appVersion);
+ if (stzAgent.indexOf("MSIE")!=-1 && iVer<4)
+  g_iIEVer=3;
+ else if (stzAgent.indexOf("MSIE 4")!=-1)
+  g_iIEVer=4;
+ else
+  g_iIEVer=5;
 }
 
 function fnTabToCol(iTab)
@@ -241,12 +248,12 @@ function fnSetTabProps(iTab,fActive)
 
 function fnMouseOverScroll(iCtl)
 {
- frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[7];
+ frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[5];
 }
 
 function fnMouseOutScroll(iCtl)
 {
- frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[6];
+ frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[2];
 }
 
 function fnMouseOverTab(iTab)
@@ -287,25 +294,23 @@ function fnSetActiveSheet(iSh)
   g_iShCur=iSh;
  }
 }
-
- window.g_iIEVer=fnGetIEVer();
- if (window.g_iIEVer>=4)
-  fnBuildFrameset();
+ fnGetIEVer();
+ fnBuildFrameset();
 //-->
 </script>
 <![endif]><!--[if gte mso 9]><xml>
  <x:ExcelWorkbook>
   <x:ExcelWorksheets>
    <x:ExcelWorksheet>
-    <x:Name>20 Apps Python Course</x:Name>
-    <x:WorksheetSource HRef="index_files/sheet001.html"/>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetSource HRef="index.fld/sheet001.htm"/>
    </x:ExcelWorksheet>
   </x:ExcelWorksheets>
-  <x:Stylesheet HRef="index_files/stylesheet.css"/>
-  <x:WindowHeight>6510</x:WindowHeight>
-  <x:WindowWidth>19200</x:WindowWidth>
-  <x:WindowTopX>32767</x:WindowTopX>
-  <x:WindowTopY>32767</x:WindowTopY>
+  <x:Stylesheet HRef="index.fld/stylesheet.css"/>
+  <x:WindowHeight>15300</x:WindowHeight>
+  <x:WindowWidth>27640</x:WindowWidth>
+  <x:WindowTopX>780</x:WindowTopX>
+  <x:WindowTopY>1000</x:WindowTopY>
   <x:ProtectStructure>False</x:ProtectStructure>
   <x:ProtectWindows>False</x:ProtectWindows>
  </x:ExcelWorkbook>
@@ -313,8 +318,8 @@ function fnSetActiveSheet(iSh)
 </head>
 
 <frameset rows="*,39" border=0 width=0 frameborder=no framespacing=0>
- <frame src="index_files/sheet001.html" name="frSheet">
- <frame src="index_files/tabstrip.html" name="frTabs" marginwidth=0 marginheight=0>
+ <frame src="index.fld/sheet001.htm" name="frSheet">
+ <frame src="index.fld/tabstrip.htm" name="frTabs" marginwidth=0 marginheight=0>
  <noframes>
   <body>
    <p>This page uses frames, but your browser doesn't support them.</p>
