@@ -1,6 +1,3 @@
-run
-jog
-foot ball
-gym
+cycle
 cycle
 cycle

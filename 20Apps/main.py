@@ -3,27 +3,32 @@ def addTodo(filePath,todoItem):
     with open(filePath, 'a') as fObject:
         fObject.write(todoItem)
 def editTodo(filePath,todoNumber):
-    with open(filePath, 'r') as fObject:
-        todos = fObject.readlines()
-    x = input("Enter the new value of the todo items: ") + '\n'
-    z = todos[ todoNumber- 1]
-    todos[todoNumber - 1] = x
-    with open(filePath, 'w') as fObject:
-        fObject.writelines(todos)
-    z = z.strip('\n')
-    x = x.strip('\n')
-    print(f"You have changed '{z}' into '{x}'")
-
+    try:
+        with open(filePath, 'r') as fObject:
+            todos = fObject.readlines()
+        x = input("Enter the new value of the todo items: ") + '\n'
+        z = todos[ todoNumber- 1]
+        todos[todoNumber - 1] = x
+        with open(filePath, 'w') as fObject:
+            fObject.writelines(todos)
+        z = z.strip('\n')
+        x = x.strip('\n')
+        print(f"You have changed '{z}' into '{x}'")
+    except IndexError :
+        print("The given todo number " ,todoNumber,'does not exist')
 def completeTodo(filePath,todoNumber):
-    with open('files/todos.txt', 'r') as fObject:
-        todos = fObject.readlines()
-    todos.pop(complete - 1)
-    with open('files/todos.txt', 'w') as fObject:
-        fObject.writelines(todos)
-    for index, item in enumerate(todos):
-        item = item.strip('\n')
-        row = f"{index + 1}.{item}"
-        print(row)
+    try :
+        with open('files/todos.txt', 'r') as fObject:
+            todos = fObject.readlines()
+        todos.pop(complete - 1)
+        with open('files/todos.txt', 'w') as fObject:
+            fObject.writelines(todos)
+        for index, item in enumerate(todos):
+            item = item.strip('\n')
+            row = f"{index + 1}.{item}"
+            print(row)
+    except IndexError:
+        print('The Index you have given is invalid')
 def showTodo(filePath) :
     with open('files/todos.txt', 'r') as fObject:
         todos = fObject.readlines()
@@ -47,11 +52,17 @@ while True:
         todo = userAction[4:]+ '\n'
         addTodo('files/todos.txt',todo)
     elif userAction.startswith('edit '):
-        y = int(userAction[5:6])
-        editTodo('files/todos.txt',y)
+        try :
+            y = int(userAction[5:])
+            editTodo('files/todos.txt',y)
+        except ValueError :
+            print("Your command was invalid. try again.")
+            continue
     elif userAction.startswith('complete '):
-        complete = int(userAction[9:10])
+
+        complete = int(userAction[9:])
         completeTodo('files/todos.txt',complete)
+
     else:
 
         match userAction:
@@ -66,8 +77,12 @@ while True:
             case "exit":
                 break
             case "edit":
-                y = int(input("what line do you want to edit: "))
-                editTodo('files/todos.txt', y)
+                try :
+                    y = int(input("what line do you want to edit: "))
+                    editTodo('files/todos.txt', y)
+                except ValueError:
+                    print("Your command was invalid.Try again.")
+                    continue
             case 'clear' :
                 clearTodo('files/todos.txt')
             case other:

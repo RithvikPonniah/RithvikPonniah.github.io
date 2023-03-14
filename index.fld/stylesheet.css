@@ -191,20 +191,21 @@ td
 	{mso-style-parent:style0;
 	color:black;
 	font-size:11.0pt;
-	font-weight:700;
-	border:.5pt solid windowtext;
 	background:white;
 	mso-pattern:black none;}
 .xl81
 	{mso-style-parent:style0;
-	color:black;
-	font-size:11.0pt;
 	background:white;
 	mso-pattern:black none;}
 .xl82
 	{mso-style-parent:style0;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	border:.5pt solid windowtext;
 	background:white;
-	mso-pattern:black none;}
+	mso-pattern:black none;
+	white-space:normal;}
 .xl83
 	{mso-style-parent:style0;
 	color:black;
