@@ -1,4 +1,6 @@
-show
-bike
-walk
-read
+run
+jog
+foot ball
+gym
+cycle
+cycle
