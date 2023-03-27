@@ -1,4 +1,3 @@
-#todos = []
 def writeToFile(todos,filePath='files/todos.txt'):
     with open(filePath, 'w') as fObject:
         fObject.writelines(todos)
@@ -47,48 +46,6 @@ def clearTodo(filePath='files/todos.txt'):
         todos = []
         writeToFile(todos,filePath)
 
-
-while True:
-    userAction = input("Type add or show or exit or edit: ").strip()
-
-    if userAction.startswith('add ') or userAction.startswith('new '):
-        todo = userAction[4:]+ '\n'
-        addTodo(todo)
-    elif userAction.startswith('edit '):
-        try :
-            y = int(userAction[5:])
-            editTodo(y)
-        except ValueError :
-            print("Your command was invalid. try again.")
-            continue
-    elif userAction.startswith('complete '):
-
-        complete = int(userAction[9:])
-        completeTodo(complete)
-
-    else:
-
-        match userAction:
-            case "add" | "create":
-                todo = input('Enter the todo items you would like to add: ')+'\n'
-                addTodo(todo)
-            case "show" | "display":
-                showTodo()
-            case "complete" :
-                complete = int(input("Pick the todo number you want to complete"))
-                completeTodo(complete)
-            case "exit":
-                break
-            case "edit":
-                try :
-                    y = int(input("what line do you want to edit: "))
-                    editTodo(y)
-                except ValueError:
-                    print("Your command was invalid.Try again.")
-                    continue
-            case 'clear' :
-                clearTodo()
-            case other:
-                print("You have entered",other, "the only commands accepted are add show and exit")
-print("Bye,See you soon")
-
+if __name__ == '__main__' :
+    print(__name__)
+    print ("Burgundi")
