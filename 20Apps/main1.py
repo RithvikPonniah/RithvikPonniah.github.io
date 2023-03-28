@@ -5,7 +5,7 @@
 #from todosModule import completeTodo
 #from todosModule import clearTodo
 import todosModule
-
+print(__name__)
 while True:
     userAction = input("Type add or show or exit or edit: ").strip()
 
