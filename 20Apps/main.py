@@ -1,4 +1,5 @@
 #todos = []
+import time
 def writeToFile(todos,filePath='files/todos.txt'):
     with open(filePath, 'w') as fObject:
         fObject.writelines(todos)
@@ -47,9 +48,10 @@ def clearTodo(filePath='files/todos.txt'):
         todos = []
         writeToFile(todos,filePath)
 
-
+now = time.strftime("%b %d,%Y %H:%M")
+print(f"It is {now}")
 while True:
-    userAction = input("Type add or show or exit or edit: ").strip()
+    userAction = input("Type add,Show,Edit,exit, Clear or Complete ").strip()
 
     if userAction.startswith('add ') or userAction.startswith('new '):
         todo = userAction[4:]+ '\n'
