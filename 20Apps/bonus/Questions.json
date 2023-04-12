@@ -1,0 +1,17 @@
+[
+  {
+    "Options": [
+      "Amphibiens",
+      "mammals",
+      "Fish",
+      "Birds",
+      "fungus"
+    ],
+    "correctAnswer": 2,
+    "questionText": "What are dolphins"
+  },
+    {"questionText": "What is the capital of india?",
+     "Options": [
+       "Delhi", "Madras", "Hyderabad"],
+     "correctAnswer": 1}
+]
