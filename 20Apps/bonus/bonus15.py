@@ -7,27 +7,28 @@ questions = json.loads(fileContent)
 userAnswers = []
 
 for question in questions :
-    x=0
     print(question['questionText'])
-    for option in question['Options'] :
-        x= x+1
-        print(f"{x}.{option}")
+    for index , option in enumerate(question['Options']) :
+        print(f"{index+1}.{option}")
     ans = int(input('Please pick the correct option number : '))
     userAnswers.append(ans)
     print()
 
-y=0
 correctAnswer = 0
-for answer in userAnswers :
+for y,answer in enumerate(userAnswers) :
     if answer == questions[y]['correctAnswer']:
         correctAnswer = correctAnswer + 1
-    y=y+1
-print("============================================")
+        ansMessage = "Correct Answer"
+    else :
+        ansMessage = "Wrong Answer"
+    #print(f"The correct answer to question number {y + 1} is option {questions[y]['correctAnswer']} you picked option {answer}")
+    print(f'{y+1}.{ansMessage}. The correct answer is {questions[y]["correctAnswer"]}. You picked {answer}')
+#print("============================================")
 print(f"You got {correctAnswer} correct answers out of {len(questions)} questions")
-print("============================================")
+#print("============================================")
 
-z=0
-for answer in userAnswers :
-    print(f"The correct answer to question number {z+1} is option {questions[z]['correctAnswer']} you picked option {answer}")
-    z = z + 1
-print("============================================")
+
+
+#for z, answer in enumerate(userAnswers) :
+ #   print(f"The correct answer to question number {z+1} is option {questions[z]['correctAnswer']} you picked option {answer}")
+#print("============================================")
