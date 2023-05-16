@@ -13,5 +13,9 @@
     {"questionText": "What is the capital of india?",
      "Options": [
        "Delhi", "Madras", "Hyderabad"],
-     "correctAnswer": 1}
+     "correctAnswer": 1},
+  {"questionText": "What is aadhi",
+  "Options": ["Donkey" , "Monkey" , "Mental" , "Genius"],
+    "correctAnswer" : 3
+  }
 ]
