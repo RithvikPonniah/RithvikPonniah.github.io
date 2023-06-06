@@ -9,7 +9,7 @@ def getTodo(filePath='files/todos.txt'):
 
 def addTodo(todoItem,filePath='files/todos.txt'):
     with open(filePath, 'a') as fObject:
-        fObject.write(todoItem)
+        fObject.writelines(todoItem)
 def editTodo(todoNumber,filePath='files/todos.txt'):
     try:
         todos = getTodo()
