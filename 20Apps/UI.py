@@ -5,11 +5,18 @@ add = PySimpleGUI.Button("Add")
 ListTodos = PySimpleGUI.Listbox(values=todosModule.getTodo(), key='todos',enable_events=True,size=[45,15])
 edit = PySimpleGUI.Button("Edit")
 
-window = PySimpleGUI.Window('Todo App',layout=[[inputText,add],[ListTodos,edit]],font=('Ariel',20))
+
+buttons = [add,edit]
+lay=[]
+for button in buttons:
+    lay.append([button])
+lay =   [[inputText,add],[ListTodos,edit]]
+window = PySimpleGUI.Window('Todo App',layout=lay,font=('Ariel',20))
 while True:
     event,value = window.read()
     print(event)
     print(value)
+    print(window)
     match event :
         case 'Add' :
             todos = todosModule.getTodo()
@@ -25,6 +32,9 @@ while True:
             todos[index] = newTodo
             todosModule.addTodo(todos)
             window['todos'].update(values=todos)
+        case 'todos':
+            window['todo'].update(value=value['todos'][0])
         case PySimpleGUI.WIN_CLOSED:
-            break
+            exit('Bye')
+print("Jingunamani")
 window.close()

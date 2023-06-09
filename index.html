@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE HTML>
 <!--
 	Hyperspace by HTML5 UP
@@ -24,6 +25,7 @@
 					<br/><br/>	
 					<nav>
 						<ul>
+							<li><a href="#gui5">06/08 Dynamic Layout</a></li>
 							<li><a href="#gui4">06/07 Building GUI in Python</a></li>
 							<li><a href="#gui3">06/06 OP 1</a></li>
 							<li><a href="#gui2">06/05 OP2</a></li>
@@ -44,7 +46,20 @@
 
 			</section>
 
+			<!-- Wrapper -->
 			<div id="wrapper">
+
+				<section id="gui5" class="wrapper style2 fade-up">
+					<div class="inner">
+						<h3>06/08/2023</h3>
+						<h2> Dynamic Layout</h2> 
+						<li>Layout parameter in window creations accepts a list of lists</li>
+						<li>You can dynamically construct the list of list and assign the variable to the layout</li>
+						<h2>exit() Vs break</h2>
+						<li>When you use exit the program tottally stops running.</li>
+						<li>When you use break the loop is broken</li>
+					</div>
+				</section>	
 
 				<section id="gui4" class="wrapper style1 fade-up">
 					<div class="inner">
@@ -52,14 +67,21 @@
 						<h2> Building GUI in Python</h2> 
 						<li>The module PySimpleGUI helps you to make a working User interface.</li>
 						<li>PySimpleGUI helps you to make Buttons,Labels,Listboxes,InputTexts and a lot more</li>
-						<li>In order to show what changes have happened in the window we can use the .update() method which updates the window to the latest virsion</li>
+						<li>You can place other elements in the window object using layout= parameter</li>
+						<li>The layout parameter for the window creation is a list of List</li>
+						<li>All the elemnts that you put in one list show up in one row</li>
+						<li>Window.read() has to be called for the window to be shown or created</li>
+						<li>window.read() returns a tuple.</li>
+						<li>First element of the tuple is the name of the element clicked in the GUI</li>
+						<li>You name an object using key or label . This is done so that if and when you want to access(read or write) that element</li>
+						<li>The second element in the tuple is a directory returns everything you entered or selected in the GUI</li>
+						<li>In order to show what changes have happened in the window we can use the .update() method which updates the values in objects window to the latest virsion</li>
+						<h2>List method</h2>
 						<li>Lists have a method called index which locates and returns the location of  any string in the list when given the string</li>
 						<li>If there are more than one of the same string then the method will return the first string that appears</li>
-						
 			
 					</div>
 				</section>
-			<div id="wrapper">
 
 				<section id="gui3" class="wrapper style3 fade-up">
 					<div class="inner">
@@ -70,7 +92,7 @@
 			
 					</div>
 				</section>
-				<div id="wrapper">
+			
 
 					<section id="gui2" class="wrapper style2 fade-up">
 						<div class="inner">
@@ -83,9 +105,8 @@
 					</section>
 	
 
-		<!-- Wrapper -->
 
-			<div id="wrapper">
+
 
 				<section id="gui1" class="wrapper style1 fade-up">
 					<div class="inner">
