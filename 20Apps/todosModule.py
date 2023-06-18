@@ -37,6 +37,7 @@ def completeTodo(todoNumber, filePath='files/todos.txt'):
             item = item.strip('\n')
             row = f"{index + 1}.{item}"
             print(row)
+        return
     except IndexError:
         print('The Index you have given is invalid')
 
