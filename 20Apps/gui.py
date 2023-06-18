@@ -7,9 +7,7 @@ add         = sg.Button("Add")
 list_box    = sg.Listbox(values=todosModule.getTodo(),key='todos',
                       enable_events=True,size=[45, 10])
 edit = sg.Button("Edit")
-win = sg.Window("My first window",
-                layout=[[label],[input,add]],[[list_box,edit]]
-                font=("Helvetica",20))
+win = sg.Window("My first window",layout=[[label],[input,add],[list_box,edit]],font=("Helvetica",20))
 while True :
     event , values = win.read()
     print(event)
