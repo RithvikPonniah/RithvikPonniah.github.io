@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE HTML>
 <!--
 	Hyperspace by HTML5 UP
@@ -25,6 +26,8 @@
 					<br/><br/>	
 					<nav>
 						<ul>
+							<li><a href="#web2">06/27 Implimenting Add todo button WebApp</a></li>
+							<li><a href="#web1">06/27 Creating WebApp</a></li>
 							<li><a href="#gui7">06/18 Implimenting all buttons and making final touches to the GUI</a></li>
 							<li><a href="#gui5">06/08 Dynamic Layout</a></li>
 							<li><a href="#gui4">06/07 Building GUI in Python</a></li>
@@ -52,10 +55,35 @@
 			
 
 			<div id="wrapper">
+				<section id="web2" class="wrapper style3 fade-up">
+					<div class="inner">
+						<h3>06/27/2023</h3>
+						<h2>Performing actions in WebApp</h2> 
+						<li><b>TextBox:</b>Use on Change parameter to link a text box to an action.</li>
+						<li>On change accepts a function</li>
+						<li><b>CheckBox:</b>to link checkbox to an action you can just check wether the checkbox is selected or not.You need experimental rerun for check box to update the checkbox when you are removing values.</li>
+						<li><b>Sessionstate</b> is a dictionary like object that stream lit provides it has value of all web elements which have a key attribute.</li>
+					</div>
+				</section>	
+				<section id="web1" class="wrapper style2 fade-up">
+					<div class="inner">
+						<h3>06/27/2023</h3>
+						<h2>Designing WebApp</h2> 
+						<li>Use <b>streamlit</b> module.</li>
+						<li><b>.title</b> is a method in streamlit that helps you create a Title for your WebApp</li>
+						<li><b>.subheader</b> is a method in streamlit that helps you create a subheading for your WebApp</li>
+						<li><b>.write</b> in streamlit helps you type in text in the WebApp</li>
+						<li><b>.checkbox</b> is used to create checkboxes in the WebApp</li>
+						<li><b>.textimput</b> helps create a textbox in the WebApp</li>
+						<li> textinput needs an arguement called <b>label=</b> which is most likely left blank by most programmers and developeres </li>
+						<li>textinput also uses another arguement called <b>placeholder=</b> which creates a place holder in the textbox</li>
+					</div>
+				</section>
+
 				<section id="gui7" class="wrapper style1 fade-up">
 					<div class="inner">
 						<h3>06/17/2023</h3>
-						<h2>Finoul touches to The ToDo App </h2> 
+						<h2>Final touches to The ToDo App </h2> 
 						<li>The popup function in PySimpleGUI module creates a popup which you can use to let the user know about an error</li>
 						<li>To change the theme of Your GUI there is a theme function built into PYSimpleGUI</li>
 						<li>Timout= argument for .read() method Updates/ rereads the GUI agin and again</li>

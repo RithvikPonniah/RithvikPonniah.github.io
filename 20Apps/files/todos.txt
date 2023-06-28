@@ -1,6 +1,0 @@
-run
-jog
-haden
-go for a bike ride
-library
-read book

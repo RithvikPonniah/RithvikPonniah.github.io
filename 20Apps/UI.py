@@ -3,7 +3,7 @@ import todosModule
 import time
 
 
-PySimpleGUI.theme("DarkBrown4")
+PySimpleGUI.theme("DarkRed1")
 clock = PySimpleGUI.Text('', key="Clock")
 inputText = PySimpleGUI.InputText(tooltip='Input Todo here', key="todo")
 add = PySimpleGUI.Button("Add")
