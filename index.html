@@ -62,10 +62,10 @@
 					<div class="inner">
 						<h3>06/30/2023</h3>
 						<h2>using camera in webapps</h2> 
-						<li>Use camera input method in streamlit module in order to first use camera.Store this in a variable</li>
-						<li>To display the taken picture in the webapp use .image method</li>
-						<li>In order to turn that picture into greyscale first import the image function from PIL.</li>
-						<li>Then use the convert("L") method to convert the image into grey scale</li>
+						<li><b> Use camera_input() method </b>in streamlit module in order to first use camera. This returns a streamlit image object</li>
+						<li>To display the taken picture in the webapp use <b>.image()</b> method. This accepts Streamlit image object</li>
+						<li>In order to turn that picture into greyscale you can use PIL Module. Import the image file from PIL.</li>
+						<li>use <b>.open()</b> method from PIL to open the image and use use the <b>convert("L")</b> method to convert the image into grey scale</li>
 					</div>
 				</section>
 				
